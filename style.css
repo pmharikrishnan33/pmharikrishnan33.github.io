@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* nav bar section*/
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 5rem;
+    height: 120px;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 1.75rem; /* ≈28px */
+}
+.logo-img{
+    width: 5rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit:cover;
+    object-position: top;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    color: #f5322c;
+    font-weight: 800;
+    /* white-space: nowrap;*/   /*prevents P M from going to next line */
+}
+
+.logo-text span{
+    color: #ffffff;
+}
+.nav-btns{
+    display: flex;    
+    gap: 2.5rem;
+    list-style: none;    /* remove bullets */
+    margin: 0;         /* remove default ul margin */
+    padding: 0; 
+}
+.nav-btns li a{
+    font-size: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.nav-btns li a:hover,
+.nav-btns li a.active {
+    color: #f5322c;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;          
+    align-items: center;
+    justify-content: space-between;    
+    padding: 0 11.875rem;      
+}
+
+/* Hero Text */
+.left {
+    /* padding-left: 11.0625rem; */
+    /* margin-top: 0;
+    padding-left: 0; */
+    width: auto;
+}
+
+/* Headings */
+.left .one { 
+    color: #f5322c;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.left .two {
+    font-weight: 700;
+    font-size: 3.25rem;
+    color: white;
+    line-height: 1.2;
+    letter-spacing: -0.5%;
+    white-space: nowrap;
+}
+.left .three {
+    font-size: 1.625rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 0.25rem;
+}
+.left .four {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+/* Buttons */
+.hero-btn{
+    margin-top: 1.5rem;
+    display: flex;
+}
+.hero-btn .btn{
+    padding: 0.625rem 1rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    /* margin-right: 1rem; */
+}
+.hero-btn a{
+    text-decoration: none;
+}
+.hero-btn .contact{
+    background-color: #f5322c;
+    color: #ffffff;
+    margin-right: 2rem;
+}
+.hero-btn .project{
+    color: #f5322c;
+    background: white;
+}
+
+/* Hero Image */
+
+.hero-img img {
+    width: 100%;
+    max-width: 400px;
+    min-height: 350px ;
+    min-width: 300px;
+    max-height: 472px;
+    height: auto;
+    object-fit: cover;
+    
+}
+.hero-img{
+    padding: 1.5rem  0 6.25rem 0;
+}
+
+
+/*about me section*/
+.about{
+    display: flex;
+    padding: 1rem .5rem 3.5rem 11.81rem;
+}
+.about-left img{
+    width: 321px;
+    height: 420px;
+    padding: 0 7.5rem 1rem 0;
+}
+.about-right{
+    padding-top: 95px;
+    color: #ffffff;
+}
+.about-right h3{
+    font-weight: 400;
+}
+.about-one{
+    font-size:2.25rem;
+}
+.about-right span{
+    color: #f5322c;
+}
+.about-two{
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+.about-right .btn {
+    padding:10px 10px;
+    font-weight: 400;
+    color: #f5322c;
+    background-color: #ffffff;
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+.about-right a{
+    text-decoration: none;
+}
+
+/* skill section */
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.skill-text{
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+.skill-text span{
+    color:#f5322c;
+}
+.card{
+    height:180px;
+    width:280px;
+    background-color: rgba(42, 42, 42, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card img{
+    width: 48px;
+    height:68px;
+}
+.card h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.card h3{
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+}
+.card .responsive{
+    width: 48px;
+    height: 48px;
+}
+.skill-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.625rem;
+    max-width: 614px;
+}
+/* what i do */
+.doing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.2rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2.25rem;
+}
+.text h3{
+    font-size: 2.25rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+.text span{
+    color: #f5322c;
+}
+.text p{
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.do-card .card .lap-img,
+.do-card .card .responsive-img{
+    width: 53px;
+    height: 53px;
+}
+.do-card .card .figma-img{
+    width: 48px;
+    height: 48px;
+}
+.do-card .card h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 10px;
+}
+.do-card .card p{
+    font-size: 13px;
+    color: #ffffff;
+
+}
+.do-card{
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* contact section */
+.contact,
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact{
+    padding-top: 2.2rem;
+}
+.contact h4{
+    font-size: 2.25rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+.contact-text p{
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.contact-text{
+    padding-bottom: 2.25rem;
+}
+.contact-card{
+    width: 380px;
+    height: 180px;
+    background-color: rgba(42, 42, 42, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-card p{
+    color: white;
+}
+.contact span{
+    color: #f5322c;
+}
+.fa-envelope{
+    color: white;
+    font-size: 24px;
+    padding: 24px 0 15px 0;
+}
+.fa-brands{
+    color: #ffffff;
+    font-size: 30px;
+}
+.contact-card button{
+    padding:10px 10px;
+    font-weight: 400;
+    color:#ffffff;
+    background-color: #f5322c ;
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+}
+.contact-logo{
+    display: flex;
+    gap:0.5rem;
+    padding-top: 0.7rem;
+}
+.rights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+.rights p {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 400;
+}

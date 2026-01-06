@@ -1,0 +1,255 @@
+
+@media (max-width: 1024px) and (min-width: 769px){
+    /* navbar */
+
+    .navbar{
+        height: 90px;
+        padding: 0 1rem;
+    }
+    .logo-img{
+        width: 4rem;
+    }
+    .logo-text{
+        font-size: 1rem;
+    }
+    .nav-btns{
+        gap: 2rem;
+    }
+    .nav-btns li a{
+        font-size: 0.9rem;
+    }
+
+    /* hero-section */
+    .hero{
+        padding: 0 7rem;
+    }
+    .left{
+        width: auto;
+        
+    }
+    .left .one{
+        font-size: 0.9rem;
+    }
+    .left .two{
+        font-size: 2rem;
+        white-space: nowrap;
+    }
+    .left .three{
+        font-size: 1.2rem;
+    }
+    .left .four{
+        font-size:0.9rem ;
+    }
+
+    .hero-img {
+        max-width:300px ;
+        max-height: 350px;
+        margin-left: 2rem;
+    }
+    .hero-img{
+        padding: 2rem 0 6.25rem 0 ;
+    }
+
+    /* about section */
+    .about{
+        padding: 0 .1rem 0 7rem;
+    }
+    .about-left img{
+        width: 225px;
+        height: 294px;
+        padding:0 4rem 3.5rem 0;
+    }
+    .about-two{
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+    .about-one{
+        font-size: 1.9rem;
+    }
+    /* skill section */
+    .skill{
+        gap: 1.5rem;
+        padding-top: 0.5rem;
+    }
+    .skill-text{
+        font-size: 1.9rem;
+
+    }
+
+    /* what i do */
+    .text h3{
+        font-size: 1.9rem;
+    }
+    .text p{
+        font-size: 1rem;
+    }
+    .card .lap-img,
+    .card .responsive-img{
+        width: 46px;
+        height: 46px;
+    }
+    .card .figma-img{
+        width: 41px;
+        height: 41px;
+    }
+    .do-card .card h4{
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .do-card .card p{
+        font-size: 11px;
+    }
+    .do-card .card{
+        width: 220px;
+        height: 150px;
+    }
+
+    /* contact section */
+    .contact h4{
+        font-size: 1.9rem;
+    }
+    .contact p{
+        font-size: 1rem;
+    }
+
+    /* rights */
+    .rights p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  /* GLOBAL */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-right {
+    width: 100%;
+  }
+
+  .nav-btns {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    flex-direction: column;
+    padding: 0 1.5rem;
+    text-align: center;
+  }
+
+  .left .two {
+    font-size: 2rem;
+    white-space: normal;
+  }
+
+  .left .three {
+    font-size: 1.1rem;
+  }
+
+  .left .four {
+    font-size: 0.9rem;
+  }
+
+  .hero-btn {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .hero-img {
+    padding: 2rem 0;
+  }
+
+  .hero-img img {
+    max-width: 280px;
+    min-width: unset;
+    min-height: unset;
+  }
+
+  /* ABOUT SECTION */
+  .about {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .about-left img {
+    width: 220px;
+    height: auto;
+    padding: 0 0 2rem 0;
+  }
+
+  .about-right {
+    padding-top: 0;
+  }
+
+  .about-two {
+    font-size: 0.95rem;
+  }
+
+  /* SKILLS */
+  .skill-card {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .skill-card .card{
+    padding: 0 10px;
+  }
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* WHAT I DO */
+  .text p{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .do-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* CONTACT */
+  .contact-text p{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .contact-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .contact-logo {
+    gap: 1rem;
+  }
+
+  /* RIGHTS */
+  .rights p {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+
+
