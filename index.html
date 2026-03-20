@@ -1,189 +1,236 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <title>Document</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harikrishnan P M — Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!--nav bar-->
-  <nav class="navbar">
-    <div class="nav-left">
-      <img src="assets/secondary.jpg" alt="profile" class="logo-img">
-      <span class="logo-text">Harikrishan <span>P M</span></span>
-    </div>
-
-    <div class="nav-right">
-      <ul class="nav-btns">
-      <li><a href="#home" class="active">Home</a></li>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">hk<span>.dev</span></div>
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
-      </div>
-      </ul>
+    </ul>
   </nav>
 
+  <!-- HERO / ABOUT -->
+  <div id="about" style="max-width:1200px;margin:0 auto;">
+    <div id="hero">
+      <div class="hero-left">
+        <div class="hero-badge"><span class="badge-dot"></span>Open to Opportunities</div>
+        <h1 class="hero-name">
+          Harikrishnan<br>
+          <span class="hl">P M</span>
+        </h1>
+        <p class="hero-desc">
+          18-year-old <strong>Full Stack Developer</strong> in the making. Studying BSc Computer Science in Kerala,
+          building real products with HTML, CSS, JS, React, Node & Express.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-fill">See My Work →</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
 
-
-  <!--hero section-->
-  <section class="hero">
-    <div class="left">
-      <h3 class="one">Hi, I’m</h3>
-      <h3 class="two">Harikrishan P M</h3>
-      <h3 class="three">Frontend Developer & UI Designer</h3>
-      <h3 class="four">A degree student passionate about building responsive<br>
-      websites and clean UI designs.</h3>
-      <div class="hero-btn">
-        <a class="btn contact" href="mailto:pmharikrishnan33@gmail.com">Contact Me</a>
-        <a class="btn project" href="#projects">view Project</a>
+      <div class="hero-photo">
+        <div class="photo-card">
+          <div class="photo-placeholder">
+            <!-- <div class="photo-icon">📸</div> -->
+            <img src="/assets/primary.jpg" width="396" alt="My-image">
+          </div>
+          <div class="photo-footer">
+            <strong>Harikrishnan P M</strong>
+            <span>BSc CS · Kerala 🇮🇳</span>
+          </div>
+        </div>
+        <div class="sticker sticker-1">Full Stack Dev 🚀</div>
+        <div class="sticker sticker-2">Age: 18</div>
       </div>
     </div>
+  </div>
 
-    <div class="hero-img">
-      <img src="assets/primary.jpg" alt="photo" class="hero-right">
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-wrap">
+      <div class="eyebrow reveal">02 — Skills</div>
+      <h2 class="section-title reveal">My Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><span class="sk-icon">🌐</span>
+          <div>
+            <div class="sk-name">HTML</div>
+            <div class="sk-level">Markup</div>
+          </div>
+        </div>
+        <div class="skill-card reveal"><span class="sk-icon">🎨</span>
+          <div>
+            <div class="sk-name">CSS</div>
+            <div class="sk-level">Styling</div>
+          </div>
+        </div>
+        <div class="skill-card reveal"><span class="sk-icon">⚡</span>
+          <div>
+            <div class="sk-name">JavaScript</div>
+            <div class="sk-level">Language</div>
+          </div>
+        </div>
+        <div class="skill-card reveal"><span class="sk-icon">⚛️</span>
+          <div>
+            <div class="sk-name">React</div>
+            <div class="sk-level">Frontend</div>
+          </div>
+        </div>
+        <div class="skill-card reveal"><span class="sk-icon">🟢</span>
+          <div>
+            <div class="sk-name">Node.js</div>
+            <div class="sk-level">Backend</div>
+          </div>
+        </div>
+        <div class="skill-card reveal"><span class="sk-icon">🚂</span>
+          <div>
+            <div class="sk-name">Express</div>
+            <div class="sk-level">Framework</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- about me section-->
-  <section class="about" id="about">
-    <div class="about-left">
-      <img src="assets/secondary.jpg" alt="photo">
-    </div>
-    <div class="about-right">
-      <h3 class="about-one">About <span>Me</span></h3>
-      <h3 class="about-two">I am a <span>degree student</span> with a strong interest 
-          in<span> frontend development</span> and <span>design</span>. I enjoy creating clean, responsive websites and designing user-friendly interfaces using HTML, CSS, and Figma.
-      </h3>
-      <a href="assets/resume.pdf" class="btn project">Download CV</a>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-wrap">
+      <div class="eyebrow reveal">03 — Work</div>
+      <h2 class="section-title reveal">Projects I've Built</h2>
+      <div class="projects-list">
+        <a class="project-card reveal" href="https://github.com/pmharikrishnan33/Loruki-project" target="_blank">
+          <div>
+            <div class="proj-num">PROJECT 01</div>
+            <div class="proj-name">Loruki Project</div>
+            <div class="proj-desc">A fully responsive cloud hosting website with a modern layout — hero sections,
+              feature grids, and a polished design system. Clean, production-ready HTML & CSS.</div>
+            <div class="proj-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span>
+            </div>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </a>
+        <a class="project-card reveal" href="https://github.com/pmharikrishnan33/Ats-project" target="_blank">
+          <div>
+            <div class="proj-num">PROJECT 02</div>
+            <div class="proj-name">ATS Project</div>
+            <div class="proj-desc">An Applicant Tracking System web application to streamline the hiring process. Built
+              with modern web tech, showcasing full-stack development capabilities.</div>
+            <div class="proj-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- skill section -->
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="eyebrow reveal">04 — Contact</div>
+      <div class="contact-grid">
 
-  <div class="skill" id="skills">
-    <h3 class="skill-text">My <span>Skills</span></h3>
-    <div class="skill-card">
-      <div class="card">
-        <img src="assets/logos_html-5.png" alt="html logo-img">
-        <h2>HTML5</h2>
-        <h3>Semantic & clean markup</h3>
+        <div class="contact-left reveal">
+          <h2 class="section-title">Let's Work<br>Together</h2>
+          <p>I'm actively looking for internships, collaborations, and freelance projects. Drop me a message or connect
+            through my socials!</p>
+          <div class="social-row">
+            <a class="social-link" href="https://github.com/pmharikrishnan33" target="_blank">
+              <div class="s-icon gh">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </div>
+              GitHub
+              <span class="s-sub">pmharikrishnan33</span>
+            </a>
+            <a class="social-link" href="https://linkedin.com/in/harikrishnan-p-m-a87096354/" target="_blank">
+              <div class="s-icon li">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </div>
+              LinkedIn
+              <span class="s-sub">harikrishnan-p-m</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form reveal">
+          <div class="form-title">Send me a message 👋</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" id="f-name" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="f-email" placeholder="you@email.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" id="f-subject" placeholder="What's it about?" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea id="f-msg" placeholder="Tell me about your idea or project..."></textarea>
+          </div>
+          <button class="btn-submit" onclick="submitForm()">Send Message →</button>
+          <div class="form-success" id="form-success">✅ Opening your mail client — talk soon!</div>
+        </div>
+
       </div>
-
-      <div class="card">
-        <img src="assets/logos_css-3.png" alt="">
-        <h2>CSS3</h2>
-        <h3>modern & responsive styling</h3>
-      </div>
-
-      <div class="card">
-        <img class="responsive" src="assets/responsive.png" alt="">
-        <h2>Responsive Design</h2>
-        <h3>modern & responsive styling</h3>
-      </div>
-
-      <div class="card">
-        <img class="responsive" src="assets/figma.png" alt="">
-        <h2>Figma</h2>
-        <h3>modern & responsive styling</h3>
-      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- what i do -->
+  <footer>
+    Designed & built by <span>Harikrishnan P M</span> · 2025
+  </footer>
 
-  <div class="doing" id="services">
-    <div class="text">
-      <h3>What <span>I Do</span></h3>
-      <p>I Design and Build Clean, Responsive, and User-Friendly Interfaces</p>
-    </div>
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          e.target.style.transitionDelay = (i % 5) * 0.07 + 's';
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    <div class="do-card">
-      <div class="card">
-        <img class="lap-img" src="assets/laptop.png" alt="laptop">
-        <h4>Frontend Development</h4>
-        <p>Building Clean, Responsive Websites with Modern HTML and CSS Practices.</p>
-      </div>
-
-      <div class="card">
-        <img class="figma-img" src="assets/figma.png" alt="laptop">
-        <h4>UI Design (Figma)</h4>
-        <p>Designing User-Friendly Interfaces and Interactive Prototypes Using Figma.</p>
-      </div>
-
-      <div class="card">
-        <img class="responsive-img" src="assets/mdi_responsive.png" alt="laptop">
-        <h4>Frontend Development</h4>
-        <p>Building Clean, Responsive Websites with Modern HTML and CSS Practices.</p>
-      </div>
-    </div>
-  </div>
-
-  
-<!-- projects section -->
-<div class="projects" id="projects">
-  <h3 class="projects-text">My <span>Projects</span></h3>
-
-  <div class="projects-card">
-    <div class="card">
-      <i class="fa-solid fa-code project-icon"></i>
-      <h2>Frontend Practice</h2>
-      <h3>Forms, layouts & UI components</h3>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-laptop-code project-icon"></i>
-      <h2>React Learning</h2>
-      <h3>State, props & API basics</h3>
-    </div>
-
-<div class="card">
-    <i class="fa-solid fa-globe project-icon"></i>
-    <h2>Loruki Web Page Clone</h2>
-    <h3>Built a responsive web page using HTML & CSS. Learned layout, forms, navigation & responsive design.</h3>
-
-    <!-- Buttons container -->
-    <div class="project-btns">
-        <a href="https://pmharikrishnan33.github.io/Loruki-project/index.html" target="_blank" class="btn btn-outline">View Live</a>
-        <a href="https://github.com/pmharikrishnan33/Loruki-project" target="_blank" class="btn btn-outline">View Code</a>
-    </div>
-</div>
-
-
-  <p class="projects-note">
-    Currently building projects to strengthen my frontend skills. Live demos and source code will be added soon.
-  </p>
-</div>
-  
-  <!-- contact section -->
-  <div class="contact" id="contact">
-    <div class="contact-text">
-      <h4>Contact <span>Me</span></h4>
-      <p>Have a project or want to work together <span>?</span> Feel free to reach out<span>.</span></p>
-    </div>
-
-    <div class="contact-card">
-      <i class="fas fa-envelope"></i>
-      <p>pmharikrishnan33@gmail.com</p>
-        <button onclick="window.location.href='mailto:pmharikrishnan55@gmail.com'" class="contact-card-btn">Contact Me</button>
-    </div>
-
-    <div class="contact-logo">
-      <i class="fa-brands fa-linkedin-in"></i>
-      <i class="fa-brands fa-github"></i>
-      <i class="fa-brands fa-instagram"></i>
-    </div>
-  </div>
-
-  <!-- rights -->
-   <div class="rights">
-    <p>© 2026 Harikrishnan P M. All rights reserved.</p>
-   </div>
+    // Contact form
+    function submitForm() {
+      const name = document.getElementById('f-name').value.trim();
+      const email = document.getElementById('f-email').value.trim();
+      const subject = document.getElementById('f-subject').value.trim();
+      const msg = document.getElementById('f-msg').value.trim();
+      if (!name || !email || !msg) { alert('Please fill in your name, email, and message.'); return; }
+      const mailto = `mailto:pmharikrishnan33@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Enquiry')}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + msg)}`;
+      window.location.href = mailto;
+      document.getElementById('form-success').style.display = 'block';
+    }
+  </script>
 </body>
-</html> 
+
+</html>
